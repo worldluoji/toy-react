@@ -1,0 +1,17 @@
+1. 安装webpack，
+webpack是用来打包前端包的。可以把所有js都打包到一个文件中。
+npm init -y
+npm install webpack webpack-cli --save-dev
+国内可以用cnpm淘宝的镜像，速度会很快。
+npx webpack 命令打包
+
+2.在安装一个要打包到生产环境的安装包时，你应该使用 npm install --save，如果你在安装一个用于开发环境的安装包（例如，linter, 测试库等），你应该使用 npm install --save-dev。
+
+webpack提供了很多loader，用于支持加载css, ts，bebal等等，
+3. 安装babel
+cnpm install --save-dev babel-loader
+cnpm install --save-dev @babel/core
+cnpm install --save-dev @babel/preset-env
+因为jsx依赖于babel，所以这里做了配置。
+
+4.安装@babel/plugin-transform-react-jsx，是bebal的react-jsx插件
